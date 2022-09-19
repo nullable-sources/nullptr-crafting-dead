@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nullptr-crafting-dead", "nullptr-crafting-dead.vcxproj", "{592583C7-633C-4275-B524-25F05EE552A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "third-party", "third-party", "{9822D5ED-28CB-4351-A039-1F6245FD79FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|x64 = debug|x64
+		debug|x86 = debug|x86
+		release|x64 = release|x64
+		release|x86 = release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{592583C7-633C-4275-B524-25F05EE552A5}.debug|x64.ActiveCfg = debug|x64
+		{592583C7-633C-4275-B524-25F05EE552A5}.debug|x64.Build.0 = debug|x64
+		{592583C7-633C-4275-B524-25F05EE552A5}.debug|x86.ActiveCfg = debug|Win32
+		{592583C7-633C-4275-B524-25F05EE552A5}.debug|x86.Build.0 = debug|Win32
+		{592583C7-633C-4275-B524-25F05EE552A5}.release|x64.ActiveCfg = release|x64
+		{592583C7-633C-4275-B524-25F05EE552A5}.release|x64.Build.0 = release|x64
+		{592583C7-633C-4275-B524-25F05EE552A5}.release|x86.ActiveCfg = release|Win32
+		{592583C7-633C-4275-B524-25F05EE552A5}.release|x86.Build.0 = release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F59A853-BE12-4193-A17A-B396655D189D}
+	EndGlobalSection
+EndGlobal
