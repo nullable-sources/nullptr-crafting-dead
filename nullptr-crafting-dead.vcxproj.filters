@@ -4,5 +4,126 @@
     <Filter Include="src">
       <UniqueIdentifier>{830a2224-5632-4e8e-9f80-cd48b6e3a812}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\functions">
+      <UniqueIdentifier>{5a2456a8-d937-4280-b049-95176b67a4d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sdk">
+      <UniqueIdentifier>{9ceb9cca-71d3-4f76-8693-de2444ff327d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\hooks">
+      <UniqueIdentifier>{f9edb832-3f74-45a6-965f-93cd947ef5b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sdk\bolt">
+      <UniqueIdentifier>{3d78b0b9-106f-441a-9bac-937cfbd6dbd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sdk\crafting-dead">
+      <UniqueIdentifier>{f5fa96f2-2cb6-4066-a326-531d43decd64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sdk\unity">
+      <UniqueIdentifier>{e58776a1-02d6-43d6-88d3-a68f1e62963f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\hooks\wnd-proc">
+      <UniqueIdentifier>{41045cff-451b-465b-ac14-095f351f6ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\hooks\swap-chain">
+      <UniqueIdentifier>{e52b0bcd-ca09-4dcd-bf03-4107fedc1d78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\functions\visuals">
+      <UniqueIdentifier>{a1fd7d20-8360-48c5-9e87-694c3f442ffe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sdk\sdk.cpp">
+      <Filter>src\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hooks\hooks.cpp">
+      <Filter>src\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hooks\swap-chain\swap-chain.cpp">
+      <Filter>src\hooks\swap-chain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hooks\wnd-proc\wnd-proc.cpp">
+      <Filter>src\hooks\wnd-proc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functions\visuals\visuals.cpp">
+      <Filter>src\functions\visuals</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\sdk\sdk.h">
+      <Filter>src\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\unity\component.h">
+      <Filter>src\sdk\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\unity\game-object.h">
+      <Filter>src\sdk\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\unity\mono-behaviour.h">
+      <Filter>src\sdk\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\unity\object.h">
+      <Filter>src\sdk\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\unity\screen.h">
+      <Filter>src\sdk\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\unity\transform.h">
+      <Filter>src\sdk\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\unity\behaviour.h">
+      <Filter>src\sdk\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\unity\camera.h">
+      <Filter>src\sdk\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\crafting-dead\entity-zombie.h">
+      <Filter>src\sdk\crafting-dead</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\crafting-dead\player-camera.h">
+      <Filter>src\sdk\crafting-dead</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\crafting-dead\player-controller.h">
+      <Filter>src\sdk\crafting-dead</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\crafting-dead\entity-player.h">
+      <Filter>src\sdk\crafting-dead</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\crafting-dead\entity-util.h">
+      <Filter>src\sdk\crafting-dead</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\bolt\bolt-entity.h">
+      <Filter>src\sdk\bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\bolt\bolt-network.h">
+      <Filter>src\sdk\bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\bolt\entity.h">
+      <Filter>src\sdk\bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\bolt\prefabs.h">
+      <Filter>src\sdk\bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\bolt\bolt-core.h">
+      <Filter>src\sdk\bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\bolt\bolt-double-list.h">
+      <Filter>src\sdk\bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hooks\hooks.h">
+      <Filter>src\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hooks\swap-chain\swap-chain.h">
+      <Filter>src\hooks\swap-chain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hooks\wnd-proc\wnd-proc.h">
+      <Filter>src\hooks\wnd-proc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\functions\visuals\visuals.h">
+      <Filter>src\functions\visuals</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

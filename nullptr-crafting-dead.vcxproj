@@ -18,6 +18,57 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)third-party\null-input\null-input.vcxproj">
+      <Project>{7e069d39-333d-4e89-90ae-90b382dd5f96}</Project>
+    </ProjectReference>
+    <ProjectReference Include="$(SolutionDir)third-party\null-mono\null-mono.vcxproj">
+      <Project>{f3718118-087f-4369-9ec7-aab0eb997d12}</Project>
+    </ProjectReference>
+    <ProjectReference Include="$(SolutionDir)third-party\null-render\null-render.vcxproj">
+      <Project>{4abcf635-9767-40f9-989e-f0cdf5fb68ae}</Project>
+    </ProjectReference>
+    <ProjectReference Include="$(SolutionDir)third-party\null-render\src\renderers\null-renderer-directx11\null-renderer-directx11.vcxproj">
+      <Project>{d51ad3ae-de95-488a-b202-a4192f685a59}</Project>
+    </ProjectReference>
+    <ProjectReference Include="$(SolutionDir)third-party\null-sdk\null-sdk.vcxproj">
+      <Project>{f7a10a5c-0fae-424b-8f2b-6cc4e4d898d1}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\functions\visuals\visuals.cpp" />
+    <ClCompile Include="src\hooks\hooks.cpp" />
+    <ClCompile Include="src\hooks\swap-chain\swap-chain.cpp" />
+    <ClCompile Include="src\hooks\wnd-proc\wnd-proc.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\sdk\sdk.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\functions\visuals\visuals.h" />
+    <ClInclude Include="src\hooks\hooks.h" />
+    <ClInclude Include="src\hooks\swap-chain\swap-chain.h" />
+    <ClInclude Include="src\hooks\wnd-proc\wnd-proc.h" />
+    <ClInclude Include="src\sdk\bolt\bolt-core.h" />
+    <ClInclude Include="src\sdk\bolt\bolt-double-list.h" />
+    <ClInclude Include="src\sdk\bolt\bolt-entity.h" />
+    <ClInclude Include="src\sdk\bolt\bolt-network.h" />
+    <ClInclude Include="src\sdk\bolt\entity.h" />
+    <ClInclude Include="src\sdk\bolt\prefabs.h" />
+    <ClInclude Include="src\sdk\crafting-dead\entity-player.h" />
+    <ClInclude Include="src\sdk\crafting-dead\entity-util.h" />
+    <ClInclude Include="src\sdk\crafting-dead\entity-zombie.h" />
+    <ClInclude Include="src\sdk\crafting-dead\player-camera.h" />
+    <ClInclude Include="src\sdk\crafting-dead\player-controller.h" />
+    <ClInclude Include="src\sdk\sdk.h" />
+    <ClInclude Include="src\sdk\unity\behaviour.h" />
+    <ClInclude Include="src\sdk\unity\camera.h" />
+    <ClInclude Include="src\sdk\unity\component.h" />
+    <ClInclude Include="src\sdk\unity\game-object.h" />
+    <ClInclude Include="src\sdk\unity\mono-behaviour.h" />
+    <ClInclude Include="src\sdk\unity\object.h" />
+    <ClInclude Include="src\sdk\unity\screen.h" />
+    <ClInclude Include="src\sdk\unity\transform.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -97,6 +148,7 @@
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -117,6 +169,7 @@
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -137,6 +190,7 @@
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -159,6 +213,7 @@
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
