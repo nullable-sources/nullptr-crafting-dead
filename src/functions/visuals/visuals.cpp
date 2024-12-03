@@ -6,9 +6,9 @@ namespace commands {
         bool state{ };
 
     public:
-        virtual bool execute(const std::vector<std::string>& args) {
+        virtual bool execute(const std::vector<std::string_view>& args) {
             if(args.empty()) return false;
-            state = std::stoi(args[0]);
+            state = std::stoi(std::string(args[0]));
             return true;
         }
 

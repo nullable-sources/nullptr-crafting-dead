@@ -9,7 +9,7 @@ namespace hooks {
         static std::once_flag initialize{ };
         std::call_once(initialize, [&]() {
             sdk::window.time_data.initialize();
-            sdk::dx11_data.initialize(swap_chain);
+            sdk::dx11_data.initialize();
             null::render::directx11::initialize(sdk::dx11_data.device, sdk::dx11_data.context);
             });
 

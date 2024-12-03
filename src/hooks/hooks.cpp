@@ -19,7 +19,7 @@ namespace hooks {
 		memory::minhook::initialize();
 
 		wnd_proc_t::setup(memory::signature_t{ sdk::unityplayer.pe_image, "40 55 56 57 41 56 41 57 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B F1" }.find());
-		swap_chain_t::setup(memory::signature_t{ sdk::dxgi.pe_image, "48 89 5C 24 ? 48 89 74 24 ? 55 57 41 56 48 8D 6C 24" }.find());
+		swap_chain_t::setup((*(std::uintptr_t**)sdk::dx11_data.swap_chain)[8]);
 		mono::thread_t* thread{ mono::thread_t::attach() }; {
 			log_t::setup(mono::method_t::parse("[UnityEngine.CoreModule.dll] UnityEngine:Debug->Log(object)")->address());
 			handle_command_t::setup(mono::method_t::parse("[Assembly-CSharp.dll] ChatManager->HandleCommand(ICommandSender, string)")->address());

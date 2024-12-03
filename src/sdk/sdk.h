@@ -18,6 +18,8 @@
 namespace sdk {
 	struct dx11_data_t {
 	public:
+        IDXGISwapChain* swap_chain{ };
+
 		ID3D11Device* device{ };
 		ID3D11DeviceContext* context{ };
 		ID3D11RenderTargetView* render_target{ };
@@ -27,7 +29,7 @@ namespace sdk {
 		~dx11_data_t() { destroy(); }
 
 	public:
-		void initialize(IDXGISwapChain* swap_chain) {
+		void initialize() {
 			swap_chain->GetDevice(__uuidof(ID3D11Device), (void**)&device);
 
 			device->GetImmediateContext(&context);

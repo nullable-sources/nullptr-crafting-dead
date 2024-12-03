@@ -2,11 +2,12 @@
 #include <null-input.h>
 #include <hooks/hooks.h>
 #include <sdk/sdk.h>
+#include <thread>
 
 namespace commands {
     struct help_t : public utils::console::i_command {
     public:
-        virtual bool execute(const std::vector<std::string>&) {
+        virtual bool execute(const std::vector<std::string_view>&) {
             for(auto& command : registered_commands) {
                 std::cout << command->name() << " " << command->description() << std::endl;
             }
@@ -19,7 +20,7 @@ namespace commands {
 
     struct clear_t : public utils::console::i_command {
     public:
-        virtual bool execute(const std::vector<std::string>&) {
+        virtual bool execute(const std::vector<std::string_view>&) {
             system("cls");
             return true;
         }
@@ -33,7 +34,7 @@ namespace commands {
         bool state{ };
 
     public:
-        virtual bool execute(const std::vector<std::string>&) {
+        virtual bool execute(const std::vector<std::string_view>&) {
             state = true;
             return true;
         }
