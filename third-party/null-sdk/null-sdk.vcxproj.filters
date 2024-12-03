@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d11addc5-089b-4237-a3dd-c21f8f81dcf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\data-types">
+      <UniqueIdentifier>{a7589b3c-f521-4b77-bc14-802f226fa1d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils">
+      <UniqueIdentifier>{0a888b4a-4f43-4ec7-abfb-ca3b83e71caf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\math">
+      <UniqueIdentifier>{972aa8a0-d68c-4536-83f4-a38c214b5245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils\win">
+      <UniqueIdentifier>{9aff64ce-5b8a-4c08-abac-d4773c38f783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils\memory">
+      <UniqueIdentifier>{0310520a-d5db-4074-95c9-a0298848f223}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\null-sdk.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\win\win.h">
+      <Filter>src\utils\win</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\fast_operators.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data-types\callbacks.h">
+      <Filter>src\data-types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data-types\color.h">
+      <Filter>src\data-types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data-types\rect.h">
+      <Filter>src\data-types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data-types\vec2.h">
+      <Filter>src\data-types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math\math.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\memory\address.h">
+      <Filter>src\utils\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\memory\signature.h">
+      <Filter>src\utils\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\memory\pe_image.h">
+      <Filter>src\utils\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\memory\module.h">
+      <Filter>src\utils\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\encoding.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\memory\minhook-wrapper.h">
+      <Filter>src\utils\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data-types\vec3.h">
+      <Filter>src\data-types</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\utils\win\win.cpp">
+      <Filter>src\utils\win</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
